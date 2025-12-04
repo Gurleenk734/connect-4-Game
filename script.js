@@ -10,6 +10,14 @@ var rows = 6;
 var cols = 7;
 var connect = 4;
 
+// Dice starter screen elements
+const starterScreen = document.getElementById("starter-screen");
+const rollBtn = document.getElementById("rollBtn");
+const diceResult = document.getElementById("diceResult");
+
+const gameContainer = document.querySelector(".game-container");
+
+
 const dropSound = new Audio("audio/drop.wav");
  dropSound.volume = 0.17;
 

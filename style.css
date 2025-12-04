@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+
+}
 body {
   background-color: #213040;
   text-align: center;
@@ -28,14 +32,15 @@ body.starting-page {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 h1 {
-  color: #c0c5cb;
+  color: #e3e7ec;
   margin-top: 20px;
 }
 h4 {
-  color: #c0c5cb;
+  color: #e5e6e7;
   margin-top: -15px;
   font-weight: normal;
   font-family: cursive;
@@ -129,7 +134,7 @@ h4 {
 }
 
 #restartBtn:hover {
-  background: #5c5a5b;
+  background: #d35656;
   color: white;
   border: 0.02px solid transparent;
 }
@@ -245,15 +250,19 @@ button:hover {
   border-radius: 8px;
   color: white;
   font-size: 1.5rem;
+  
 }
 
 /* Optional: red/yellow background for the current player */
 .red-turn {
-  background-color: #ee6677;
+  background: radial-gradient(circle, #97f7e4 0.1%, #18bc9c 100%);
+  text-shadow: #213040 1px 1px 2px;
 }
 
 .yellow-turn {
-  background-color: #18bc9c;
+background: radial-gradient(circle, rgb(255, 253, 145) 0.1%, #fff242 100%);
+  color: white;
+  text-shadow: #213040 1px 1px 2px;
 }
 
 /* Responsive Design */
@@ -264,10 +273,11 @@ button:hover {
     gap: 5px; /* smaller spacing */
     margin: 10px auto;
     padding: 5px; /* less padding */
+    border-radius: 6%;
   }
   .tile {
-    height: 50%;
-    width: 50%;
+    height: 75%;
+    width: 75%;
     margin: 5px;
   }
   .start-container {
@@ -278,12 +288,15 @@ button:hover {
 }
 
 footer {
-  background-color: #213040; /* Dark background like your page */
+  background-color: none; /* Dark background like your page */
   color: #c0c5cb; /* Light text */
   text-align: center;
   padding: 10px 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .start-container h1 {
@@ -349,9 +362,9 @@ footer {
   flex-wrap: wrap; /* allow wrapping on small screens */
   width: fit-content;
 }
-
-/* Scoreboard styling */
-.scoreboard {
+/* 
+Scoreboard styling */
+/* .scoreboard {
   display: flex;
   gap: 20px;
   padding: 20px;
@@ -375,7 +388,7 @@ footer {
   margin: 0;
   font-size: 2rem;
   font-weight: bold;
-}
+} */
 #overlay {
   position: fixed;
   top: 0;
@@ -426,3 +439,5 @@ footer {
     font-size: 1.2rem;
   }
 }
+
+
